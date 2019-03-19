@@ -1,2 +1,2 @@
-org\aws\samples\greeting\app\AppApplication.class
-org\aws\samples\greeting\app\GreetingController.class
+org/aws/samples/greeting/app/GreetingController.class
+org/aws/samples/greeting/app/AppApplication.class

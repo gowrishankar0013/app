@@ -23,7 +23,7 @@
 		<docker.registry>registry.hub.docker.com</docker.registry>
 		<docker.name>${docker.registry}/${docker.repo}/${project.build.finalName}:${docker.tag}</docker.name>
 		<greeting.host>localhost</greeting.host>
-		<greeting.port>8082</greeting.port>
+		<greeting.port>8080</greeting.port>
 	</properties>
 
 	<dependencies>
@@ -49,7 +49,7 @@
 		</plugins>
 	</build>
 
-	<profiles>
+<!--<profiles>
 		<profile>
 			<id>jib</id>
 			<build>
@@ -88,6 +88,6 @@
 				</plugins>
 			</build>
 		</profile>
-	</profiles>
+	</profiles>-->
 
 </project>
