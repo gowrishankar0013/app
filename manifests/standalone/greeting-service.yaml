@@ -10,4 +10,8 @@ spec:
     protocol: TCP
     port: 8080
     targetPort: 8080
+  - name: debug
+    protocol: TCP
+    port: {{ .Values.service.externalDebugPort }}
+    targetPort: {{ .Values.service.internalDebugPort }}
   type: LoadBalancer
