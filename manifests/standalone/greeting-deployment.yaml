@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -11,13 +12,13 @@ spec:
     metadata:
       labels:
         app: greeting
-  spec:
-    containers:
+    spec:
+      containers:
       - name: greeting
         image: gowrishankar0013/greeting
         imagePullPolicy: Always
         ports:
-          - containerPort: 8080
+        - containerPort: 8080
           name: "http"
-          - containerPort: 5005
-            name: "debug"
+        - containerPort: 5005
+          name: "debug"
